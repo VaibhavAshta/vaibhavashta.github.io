@@ -80,7 +80,7 @@ hr {
 .card {
     border: 0;
     border-radius: 0;
-    color: #fff;
+    color: #26282b;
     box-shadow: 5px 5px 10px #e1e1e1;
     padding: 3em 0;
     border-bottom-right-radius: 4em;
@@ -97,7 +97,7 @@ hr {
 
 @media (hover: hover) {
     .card-body:hover {
-        color: #26282b;
+        color: #146C94;
         transition-duration: 0.5s;
     }
 }
