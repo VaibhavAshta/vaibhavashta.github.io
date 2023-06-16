@@ -1,0 +1,103 @@
+body {
+    font-family: "Merriweather", serif;
+}
+
+.container {
+    max-width: auto;
+    margin: auto;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, teal 50%, #26282b 50%);
+    display: flex;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.va {
+    border-radius: 50%;
+}
+
+.typing-demo {
+    width: 13ch;
+    animation: typing 2s steps(13), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.name {
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .about {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+}
+
+hr {
+    border: dotted #ff0084 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+.gradient-background {
+    background: linear-gradient(45deg, #ff6200, #ff4c4c, #ff0084, #a200ff, #9500ff, #00a6ff);
+    background-size: 400%;
+    animation: gradient-animation 18s ease infinite alternate;
+    color: azure;
+}
+
+.card {
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    box-shadow: 5px 5px 10px #e1e1e1;
+    padding: 3em 0;
+    border-bottom-right-radius: 4em;
+    border-top-left-radius: 4em;
+    background: linear-gradient(to left, #ffc458 50%, #DDDDDD 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 0.5s ease-out;
+}
+
+.card:hover {
+    background-position: left;
+}
+
+@media (hover: hover) {
+    .card-body:hover {
+        color: #26282b;
+        transition-duration: 0.5s;
+    }
+}
